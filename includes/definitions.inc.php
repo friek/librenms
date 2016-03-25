@@ -1487,7 +1487,7 @@ $config['os'][$os]['icon']             = 'generic';
 $config['os'][$os]['over'][0]['graph'] = 'device_bits';
 $config['os'][$os]['over'][0]['text']  = 'Traffic';
 
-// HP MSM 
+// HP MSM
 $os = 'hpmsm';
 $config['os'][$os]['text']             = 'HP MSM';
 $config['os'][$os]['type']             = 'wireless';
@@ -1564,6 +1564,23 @@ $config['os'][$os]['type']             = 'wireless';
 $config['os'][$os]['icon']             = 'deliberant';
 $config['os'][$os]['over'][0]['graph'] = 'device_bits';
 $config['os'][$os]['over'][0]['text']  = 'Device Traffic';
+
+// Raisecom (reap)
+$os = "reap";
+$config['os'][$os]['text']                  = "Raisecom REAP";
+$config['os'][$os]['type']                  = "network";
+$config['os'][$os]['icon']                  = "raisecom";
+$config['os'][$os]['sysObjectID'][]         = ".1.3.6.1.2.1.1.1.0";
+//+$config['os'][$os]['mibs'][]                = 'DHCP-SNOOPING-MIB';
+//+$config['os'][$os]['mibs'][]                = 'RAISECOM-BASE-MIB';
+//+$config['os'][$os]['mibs'][]                = 'RAISECOM-FANMONITOR-MIB';
+//+$config['os'][$os]['mibs'][]                = 'RAISECOM-MCAST-MIB';
+//+$config['os'][$os]['mibs'][]                = 'RAISECOM-PERF-MIB';
+//+$config['os'][$os]['mibs'][]                = 'RAISECOM-POWERMONITOR-MIB';
+//+$config['os'][$os]['mibs'][]                = 'RAISECOM-SLOTCARDMGMT-MIB';
+//+$config['os'][$os]['mibs'][]                = 'RAISECOM-SYSTEM-MIB';
+//+$config['os'][$os]['mibs'][]                = 'SWITCH-MEMORYMANGMENT-MIB';
+//+$config['os'][$os]['mibs'][]                = 'SWITCH-TC';
 
 // Graph Types
 require_once $config['install_dir'].'/includes/load_db_graph_types.inc.php';
