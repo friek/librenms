@@ -1781,7 +1781,22 @@ $config['os'][$os]['over'][1]['text']  = 'Wifi Clients';
 $config['os'][$os]['over'][2]['graph'] = 'device_xirrus_rssi';
 $config['os'][$os]['over'][2]['text']  = 'Signal RSSI';
 
-
+// Raisecom (reap)
+$os = "reap";
+$config['os'][$os]['text']                  = "Raisecom REAP";
+$config['os'][$os]['type']                  = "network";
+$config['os'][$os]['icon']                  = "raisecom";
+$config['os'][$os]['sysObjectID'][]         = ".1.3.6.1.2.1.1.1.0";
+//+$config['os'][$os]['mibs'][]                = 'DHCP-SNOOPING-MIB';
+//+$config['os'][$os]['mibs'][]                = 'RAISECOM-BASE-MIB';
+//+$config['os'][$os]['mibs'][]                = 'RAISECOM-FANMONITOR-MIB';
+//+$config['os'][$os]['mibs'][]                = 'RAISECOM-MCAST-MIB';
+//+$config['os'][$os]['mibs'][]                = 'RAISECOM-PERF-MIB';
+//+$config['os'][$os]['mibs'][]                = 'RAISECOM-POWERMONITOR-MIB';
+//+$config['os'][$os]['mibs'][]                = 'RAISECOM-SLOTCARDMGMT-MIB';
+//+$config['os'][$os]['mibs'][]                = 'RAISECOM-SYSTEM-MIB';
+//+$config['os'][$os]['mibs'][]                = 'SWITCH-MEMORYMANGMENT-MIB';
+//+$config['os'][$os]['mibs'][]                = 'SWITCH-TC';
 
 
 // Graph Types
